@@ -18,7 +18,7 @@ Module._extensions = {
         content = Module.wrapper[0] + content + Module.wrapper[1];
         let fn = vm.runInThisContext(content);
         let dirname = path.dirname(module.id);
-        fn.call(exports, exports, require, module, module.id, dirname);
+        fn.call(exports, exports, req, module, module.id, dirname);
     },
     '.json'(module) {
         let content = fs.readFileSync(module.id, 'utf8');

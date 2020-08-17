@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "[珠峰架构 2020 课程](http://www.zhufengpeixun.com/jg-vue/node/async-1.html)",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dawnight/node-2020.git"
@@ -20,8 +17,7 @@
   "devDependencies": {
     "@types/iconv-lite": "^0.0.1",
     "@types/node": "^14.0.27",
-    "iconv-lite": "^0.6.2",
-    "office-to-pdf": "^4.0.0"
+    "iconv-lite": "^0.6.2"
   },
   "dependencies": {
     "commander": "^6.0.0",

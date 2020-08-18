@@ -1,0 +1,16 @@
+{
+  "name": "code-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "code-server": "./bin/www.js",
+    "cs": "./bin/www.js"
+  },
+  "scripts": {
+    "server": "nodemon ./bin/www.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

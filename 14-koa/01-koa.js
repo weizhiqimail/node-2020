@@ -1,7 +1,13 @@
 const fs = require('fs');
-const Koa = require('./koa');
+const path = require('path');
+const Koa = require('koa');
+const bodyParser = require('./02-koa-bodyparser');
+const koaStatic = require('./03-koa-static');
 
 const app = new Koa();
+
+app.use(bodyParser());
+app.use(koaStatic(path.resolve(__dirname)))
 
 app.use(async (ctx, next) => {
   console.log(1);
@@ -20,6 +26,8 @@ app.use(async (ctx, next) => {
   await next();
   console.log(6);
 });
+
+
 
 app.use(async (ctx, next) => {
   ctx.body = fs.createReadStream('./01-koa.js');
